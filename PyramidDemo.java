@@ -6,9 +6,11 @@ public class PyramidDemo {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("请输入金字塔层数：");
+
 		int n = scanner.nextInt();
 		System.out.print("正金字塔输入1，倒金字塔输入2：");	
 		int m = scanner.nextInt();
+
 		switch (m) {
 			case 1:
 				straight(n);
@@ -21,6 +23,7 @@ public class PyramidDemo {
 				break;
 		}
 	}
+
 	public static void straight(int n) {
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= 2*n-1; j++) {
